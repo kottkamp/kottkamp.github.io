@@ -1,0 +1,241 @@
+﻿@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800");
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+body {
+	overflow: hidden;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+#switcher {
+	height: 50px;
+	padding-bottom: 10px;
+	background: #2e2e2e;
+	z-index: 99999;
+	position: fixed;
+	width: 100%;
+}
+
+#theme_select {
+	margin-top: 9px;
+	margin-left: 30px;
+	background: #424242;
+	width: 219px;
+	display: block;
+	padding: 12px 22px 10px 14px;
+	color: #fff;
+	font-size: 13px;
+	float: left;
+	position: relative;
+}
+
+#theme_select:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	background: url(dropdown.png) no-repeat 50% 52%;
+	background-color: #525252;
+	color: #fff;
+	width: 38px;
+	height: 38px;
+}
+
+#theme_select .theme_type {
+	margin-right: 30px;
+}
+
+#theme_dropdown_list {
+	padding: 0px;
+}
+
+.logo {
+	float: left;
+	margin: 19px 0 0 25px;
+}
+
+.center {
+	margin: auto;
+	width: 100%;
+	padding-top: 2px;
+}
+
+.center ul li {
+	display: inline;
+	float: left;
+	position: relative;
+}
+
+.center ul li ul {
+	display: none;
+	margin: 46px 0 0 30px;
+	position: absolute;
+	width: 216px;
+	background: #424242;
+}
+
+.center ul li ul li {
+	border-bottom: 1px solid #525252;
+	margin: 0 0 0 19px;
+	width: 178px;
+}
+.center ul li ul li:first-child {
+	margin-top: 5px;
+}
+.center ul li ul li:last-child {
+	margin-bottom: 5px;
+}
+
+.center ul li ul li:last-child {border-bottom: none !important;}
+
+.center ul li ul li a {
+	display: block;
+	font-size: 12px;
+	padding: 11px 0;
+	color: #dcdcdc;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	-transition: all 0.1s linear;
+}
+
+.center ul li ul li a:hover span {
+	color: #fff;
+	background: #5ea65b;
+}
+
+.center ul li ul li a:hover {
+	color: #fff;
+}
+
+.theme_type {
+	background: #555;
+	padding: 3px 7px 4px 7px;
+	font-size: 11px;
+	float: right;
+	margin-top: -2px;
+	display: block;
+	color: #dedede;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	-transition: all 0.1s linear;
+}
+
+.buttons {
+	float: right;
+	margin-right: 20px;
+	display: block;
+}
+
+li.purchase {
+	margin-top: 9px;
+}
+
+li.purchase a {
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	-transition: all 0.1s linear;
+	display: block;
+	margin-right: 23px;
+	color: #fff;
+	padding: 0 15px 0 0;
+	background-color: #5ea65b;
+	line-height: 18px;
+}
+
+li.purchase a span {
+	background-color: #525252;
+	padding: 10px;
+	line-height: 18px;
+	margin: 0 15px 0 0;
+	display: inline-block;
+}
+
+li.purchase a:hover {
+	color: #fff;
+}
+
+li.remove_frame {
+	margin-top: 18px;
+}
+
+li.remove_frame a {
+	background: url(cross.png) no-repeat 0 -17px;
+	height: 18px; width: 18px;
+	display: block;
+	opacity: 0.4;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	-transition: all 0.1s linear;
+}
+
+li.remove_frame a:hover {
+	opacity: 0.8;
+}
+
+#iframe {margin: 60px 0 0 0; padding:0;}
+
+@media only screen and (max-width: 767px) {
+#theme_select {display: none;}
+}
